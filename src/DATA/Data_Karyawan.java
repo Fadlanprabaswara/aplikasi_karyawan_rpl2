@@ -3,12 +3,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package DATA;
+import Controller.dlm_data_karyawan;
+import java.sql.ResultSet;
+import javax.swing.JOptionPane;
+import java.util.HashMap;
 
 /**
  *
  * @author Lenovo
  */
 public class Data_Karyawan extends javax.swing.JFrame {
+    private void viewData() {
+//        dlm_data_karyawan ck = new dlm_data_karyawan();
+//        try {
+//            jTable.setModel(DbUtils.resultSetToTableModel(ck.updateJTable()));
+//        } catch (Exception e) {
+//            JOptionPane.showMessageDialog(null, e);
+//        }
+    }
 
     /**
      * Creates new form Data_Karyawan
@@ -305,11 +317,12 @@ public class Data_Karyawan extends javax.swing.JFrame {
                     .addComponent(rdmenikah)
                     .addComponent(rdbelummenikah))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
-                    .addComponent(txtjabatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textalamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel4)
+                        .addComponent(txtjabatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(textalamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
